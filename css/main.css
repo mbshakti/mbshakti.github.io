@@ -58,7 +58,7 @@ body {
 
 h1 {
   font-family: 'Rubik Mono One', sans-serif;
-  font-size: 5em;
+  font-size: 3.5em;
   color: #F9D423;
   margin: 20px;
   line-height: 0.8em;
@@ -67,7 +67,7 @@ h1 {
 h3 {
   font-family: 'Rubik Mono One', sans-serif;
   color: #F9D423;
-  padding: 15px;
+  padding-left: 15px;
 }
 
 hr {
@@ -109,7 +109,6 @@ th, td {
   /*overflow-x: scroll;*/
   margin-left: 5em;
   overflow-y: visible;
-  padding: 20px;
   left: 3em
 }
 
