@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Rubik|Rubik+Mono+One|Rock+Salt|Libre+Franklin:900|Rhodium+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Rubik|Rubik+Mono+One|Libre+Franklin:900&display=swap');
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -28,7 +28,7 @@ h2 {
   color: #AE4400;
   padding-left: 16px;
   font-size: 2em;
-  line-height: 33px;
+  line-height: 29px;
 }
 
 h3 {
@@ -39,9 +39,11 @@ h3 {
 }
 
 p {
-  font-family: 'Rubik', sans-serif;
-  color: #F9D423;
-  font-size: 14px;
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #AE4400;
+  padding-left: 16px;
+  font-size: 2em;
+  line-height: 33px;
 }
 
 table {
@@ -231,11 +233,11 @@ a:hover {
 
 @media screen and (max-width: 500px) {
   h2 {
-    font-size: 2.8em;
-    line-height: 47px;
+    font-size: 1.8em;
+    line-height: 26px;
   }
 
   .welcome_text {
-    width: 370px;
+    width: 320px;
   }
 }
