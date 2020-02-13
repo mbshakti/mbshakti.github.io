@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Rubik|Rubik+Mono+One|Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Rubik|Rubik+Mono+One|Rock+Salt|Libre+Franklin:900|Rhodium+Libre&display=swap');
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-  font-family: 'Rubik Mono One', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   font-size: 6.2em;
   color: #F9D423;
   margin: 12px;
@@ -24,9 +24,11 @@ h1 {
 }
 
 h2 {
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Rhodium Libre', serif;
   color: #F9D423;
-  padding: 20px;
+  padding-left: 16px;
+  font-size: 4em;
+  line-height: 64px;
 }
 
 h3 {
@@ -93,8 +95,10 @@ th, td {
 button {
   background:none;
   border:none;
-  font-size:1em;
-  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 1.2em;
+  font-family: 'Libre Franklin', sans-serif;
+  /*text-transform: uppercase;*/
+  letter-spacing: 2px;
   color: #F9D423;
   padding-left: 15px;
   cursor: pointer;
@@ -110,10 +114,12 @@ button::after, button::before {
   display: none;
 }
 
-@media screen and (min-width: 300px) {
-  h1 {
-    font-size: 3.2em;
-  }
+.schedule_table_all {
+  display: none;
+}
+
+.container {
+  cursor: pointer;
 }
 
 *,
@@ -141,7 +147,6 @@ button::after, button::before {
     float: left;
     justify-content: center;
     /*min-height: 100vh;*/
-    padding: 1em;
     width: 100%;
 }
 
@@ -170,7 +175,7 @@ a:hover {
     0% {  
         transform: translateY(0);
         text-shadow: 
-            0 0 0 #fefc4b, 
+            0 0 0 #ab4500, 
             0 0 0 #fb203b, 
             0 0 0 #fb203b, 
             0 0 0 #d65702;
@@ -179,10 +184,10 @@ a:hover {
     20% {  
         transform: translateY(-0.1em);
         text-shadow: 
-            0 0.05em 0 #fefc4b, 
-            0 0.15em 0 #fb203b, 
-            0 -0.05em 0 #fb203b, 
-            0 -0.15em 0 #d65702;
+            0 0.03em 0 #ab4500, 
+            0 0.13em 0 #fb203b, 
+            0 -0.03em 0 #fb203b, 
+            0 -0.13em 0 #d65702;
     }
 
 /*    40% {  
@@ -197,16 +202,16 @@ a:hover {
    60% {
         transform: translateY(-0.05em);
         text-shadow: 
-            0 0.01125em 0 #fefc4b, 
-            0 0.0225em 0 #fb203b, 
-            0 -0.01125em 0 #fb203b, 
-            0 -0.0225em 0 #d65702;
+            0 0.01025em 0 #ab4500, 
+            0 0.0125em 0 #fb203b, 
+            0 -0.01025em 0 #fb203b, 
+            0 -0.0125em 0 #d65702;
     }
 
     80% {  
         transform: translateY(0);
         text-shadow: 
-            0 0 0 #fefc4b, 
+            0 0 0 #ab4500, 
             0 0 0 #fb203b, 
             0 0 0 #fb203b, 
             0 0 0 #d65702;
@@ -218,4 +223,19 @@ a:hover {
       animation: none !important;
       transition: none !important;
     }
+}
+
+.welcome_text, h1 {
+  width: 380px;
+}
+
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 2.8em;
+    line-height: 47px;
+  }
+
+  .welcome_text {
+    width: 370px;
+  }
 }
