@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -22,89 +25,106 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
   <h1> Burning Conch</h1>
-  <!-- Add your site or application content here -->
-  <h3> Part I: </h3>
-  <div class="schedule_table", style="overflow-x:auto;">
-    <table style="width:100%">
-      <thead>
+  <button id="show_schedule_button">schedule</button>
+  <button id="show_info_button">info</button>
+  <button id="show_faq_button">FAQ</button>
+
+  <!-- SCHEDULE TABLE -->
+  <div id="schedule_table_all">
+    <h2> The Gang's all here</h2>
+    <h3> Part I: </h3>
+    <div class="schedule_table">
+      <table style="width:100%">
+        <thead>
+          <tr>
+            <th class="headcol">Time</th>
+            <th class="daycol">Fri, Mar 6</th>
+            <th class="daycol">Sat, Mar 7</th>
+            <th class="daycol">Sun, Mar 8</th>
+            <th class="daycol">Mon, Mar 9</th>
+            <th class="daycol">Tue, Mar 10</th>
+            <th class="daycol">Wed, Mar 11</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="headcol">7am</td>
+            <td>Arrival Day</td>
+            <td>Orientation</td>
+            <td>Atabeyra</td>
+            <td>Chill</td>
+            <td>North & Middle Caicos</td>
+            <td>North & Middle Caicos</td>
+          </tr>
+          <tr>
+            <td class="headcol">12pm</td>
+            <td>Arrival Day</td>
+            <td>TBD</td>
+            <td>Atabeyra</td>
+            <td>Chill</td>
+            <td>North & Middle Caicos</td>
+            <td>North & Middle Caicos</td>
+          </tr>
+          <tr>
+            <td class="headcol">6pm</td>
+            <td>Arrival Day</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>Drink & Paint</td>
+            <td>North & Middle Caicos</td>
+            <td>North & Middle Caicos</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3> Part II: </h3>
+    <div class="schedule_table">
+      <table style="width:100%">
         <tr>
           <th class="headcol">Time</th>
-          <th>Fri, Mar 6</th>
-          <th>Sat, Mar 7</th>
-          <th>Sun, Mar 8</th>
-          <th>Mon, Mar 9</th>
-          <th>Tue, Mar 10</th>
-          <th>Wed, Mar 11</th>
+          <th class="daycol">Thu, Mar 12</th>
+          <th class="daycol">Fri, Mar 13</th>
+          <th class="daycol">Sat, Mar 14</th>
+          <th class="daycol">Sun, Mar 15</th>
+          <th class="daycol">Mon, Mar 16</th>
         </tr>
-      </thead>
-      <tbody>
         <tr>
           <td class="headcol">7am</td>
-          <td>Arrival Day</td>
-          <td>Orientation</td>
-          <td>Atabeyra</td>
+          <td>Yoga by the pool</td>
+          <td>Caicos Catalyst</td>
           <td>Chill</td>
-          <td>North & Middle Caicos</td>
-          <td>North & Middle Caicos</td>
+          <td>Chill</td>
+          <td>Departure Day</td>
         </tr>
         <tr>
           <td class="headcol">12pm</td>
-          <td>Arrival Day</td>
-          <td>TBD</td>
-          <td>Atabeyra</td>
           <td>Chill</td>
-          <td>North & Middle Caicos</td>
-          <td>North & Middle Caicos</td>
+          <td>Caicos Catalyst</td>
+          <td>Chill</td>
+          <td>Fishing or Horse-back riding</td>
+          <td>Departure Day</td>
         </tr>
         <tr>
           <td class="headcol">6pm</td>
-          <td>Arrival Day</td>
-          <td>TBD</td>
-          <td>TBD</td>
-          <td>Drink & Paint</td>
-          <td>North & Middle Caicos</td>
-          <td>North & Middle Caicos</td>
+          <td>Treasure Hunt & Bonfire</td>
+          <td>Chill</td>
+          <td>Block party & paddle boarding</td>
+          <td>Club Med</td>
+          <td>Departure Day</td>
         </tr>
-      </tbody>
-    </table>
+      </table>
+    </div>
   </div>
 
-  <h3> Part II: </h3>
-  <div class="schedule_table", style="overflow-x:auto;">
-    <table style="width:100%">
-      <tr>
-        <th class="headcol">Time</th>
-        <th>Thu, Mar 12</th>
-        <th>Fri, Mar 13</th>
-        <th>Sat, Mar 14</th>
-        <th>Sun, Mar 15</th>
-        <th>Mon, Mar 16</th>
-      </tr>
-      <tr>
-        <td class="headcol">7am</td>
-        <td>Yoga by the pool</td>
-        <td>Caicos Catalyst</td>
-        <td>Chill</td>
-        <td>Chill</td>
-        <td>Departure Day</td>
-      </tr>
-      <tr>
-        <td class="headcol">12pm</td>
-        <td>Chill</td>
-        <td>Caicos Catalyst</td>
-        <td>Chill</td>
-        <td>Fishing or Horse-back riding</td>
-        <td>Departure Day</td>
-      </tr>
-      <tr>
-        <td class="headcol">6pm</td>
-        <td>Treasure Hunt & Bonfire</td>
-        <td>Chill</td>
-        <td>Block party & paddle boarding</td>
-        <td>Club Med</td>
-        <td>Departure Day</td>
-      </tr>
-    </table>
+  <!-- INFO TABLE -->
+  <div class="show_info_table", id="show_info_all">
+    <p>Info goes here</p>
+  </div>
+
+  <!-- FAQ TABLE -->
+  <div class="show_faq_table", id="show_faq_all">
+    <p>FAQ goes here</p>
   </div>
 
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
