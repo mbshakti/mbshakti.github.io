@@ -24,11 +24,11 @@ h1 {
 }
 
 h2 {
-  font-family: 'Rhodium Libre', serif;
-  color: #F9D423;
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #AE4400;
   padding-left: 16px;
-  font-size: 4em;
-  line-height: 64px;
+  font-size: 2em;
+  line-height: 33px;
 }
 
 h3 {
