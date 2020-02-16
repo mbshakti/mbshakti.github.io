@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Rubik|Rubik+Mono+One|Libre+Franklin:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400i&display=swap');
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -12,45 +12,43 @@ html {
 }
 
 body {
-  background: linear-gradient(90deg, #e65c00, #D93343);
+  background: white;
+  font-family: 'EB Garamond', serif;
+}
+
+.conch {
+  width: 100%;
 }
 
 h1 {
-  font-family: 'Libre Franklin', sans-serif;
   font-size: 6.2em;
-  color: #F9D423;
   margin: 12px;
   line-height: 0.8em;
 }
 
 h2 {
-  font-family: 'Rubik Mono One', sans-serif;
-  color: #AE4400;
   padding-left: 16px;
   font-size: 2em;
-  line-height: 29px;
 }
 
 h3 {
-  font-family: 'Nanum Pen Script', cursive;
-  color: #F9D423;
   padding-left: 15px;
   font-size: 24px;
 }
 
+h4 {
+  font-size: 2.5em;
+}
+
 p {
-  font-family: 'Rubik Mono One', sans-serif;
-  color: #AE4400;
   padding-left: 16px;
-  font-size: 2em;
-  line-height: 33px;
+  font-size: 1.4em;
 }
 
 table {
   border-collapse: separate;
   border-spacing: 0;
-  font-family: 'Nanum Pen Script', cursive;
-  color: #F9D423;
+  font-family: 'EB Garamond', serif;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
@@ -64,7 +62,6 @@ th, td {
   border-top-width: 0px;
   padding-left: 16px;
   padding-bottom: 16px;
-  background-color: rgba(255,255,255,0.2);
   font-size: 20px;
 }
 
@@ -79,37 +76,24 @@ th, td {
 
 .headcol {
   position: absolute;
-  background-color: #e65c00;
+  background-color: black;
   color: white;
-  width: 3em;
-  left: 0.5em;
+  width: 3.8em;
+  left: 0em;
   top: auto;
   border-top-width: 1px;
-  /*only relevant for first row*/
   margin-top: -1px;
-  /*compensate for top border*/
-}
-
-.daycol {
-  color: white;
 }
 
 button {
   background:none;
   border:none;
-  font-size: 1.2em;
-  font-family: 'Libre Franklin', sans-serif;
-  /*text-transform: uppercase;*/
+  font-size: 1.8em;
   letter-spacing: 2px;
-  color: #F9D423;
   padding-left: 15px;
   cursor: pointer;
+  padding-top: 0.2em;
 } 
-
-button::after, button::before {
-  content: "·";
-  color: pink;
-}
 
 .show_info_table, .show_faq_table {
   margin: 20px;
@@ -153,12 +137,12 @@ button::after, button::before {
 }
 
 h1 {
-    animation: text-shadow 1.5s ease-in-out infinite;
-    font: 16px/1.25 'Rubik Mono One', sans-serif;
-    font-size: 3.2em;
-    font-weight: 900;
-    line-height: 1;
-    color: #F9D423;
+  animation: text-shadow 1.5s ease-in-out infinite;
+  font-family: 'EB Garamond', serif;
+  font-size: 3.2em;
+  font-weight: 900;
+  line-height: 1;
+  /*color: #F9D423;*/
 }
 
 h1:hover {
@@ -173,7 +157,7 @@ a:hover {
     text-decoration: none;
 }
 
-@keyframes text-shadow {
+/*@keyframes text-shadow {
     0% {  
         transform: translateY(0);
         text-shadow: 
@@ -192,14 +176,14 @@ a:hover {
             0 -0.13em 0 #d65702;
     }
 
-/*    40% {  
+    40% {  
         transform: translateY(0.25em);
         text-shadow: 
             0 -0.0625em 0 #0c2ffb, 
             0 -0.125em 0 #2cfcfd, 
             0 0.0625em 0 #fb203b, 
             0 0.125em 0 #fefc4b;
-    }*/
+    }
     
    60% {
         transform: translateY(-0.05em);
@@ -218,7 +202,7 @@ a:hover {
             0 0 0 #fb203b, 
             0 0 0 #d65702;
     }
-}
+}*/
 
 @media (prefers-reduced-motion: reduce) {
     * {
